@@ -16,4 +16,3 @@ for i in range(n):
 standard_deviation = math.sqrt(standard_deviation / n)
 print("The average is", average)
 print("The standard deviation is", standard_deviation)
-
