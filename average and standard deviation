@@ -1,0 +1,18 @@
+'''average and standard deviation'''
+
+import math
+n = int(input("How many numbers you want to put in the array\n"))
+array = []
+for i in range(n):
+    number = int(input("Enter a number\n"))
+    array.append(number)
+sum = 0
+for i in range(n):
+    sum += array[i]
+average = sum / n
+standard_deviation = 0
+for i in range(n):
+    standard_deviation += (array[i] - average) ** 2 
+standard_deviation = math.sqrt(standard_deviation / n)
+print("The average is", average)
+print("The standard deviation is", standard_deviation)
